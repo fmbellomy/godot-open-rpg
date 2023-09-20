@@ -10,9 +10,11 @@ config_version=5
 
 [application]
 
-config/name="OpenJRPG"
+config/name="Burger Mystery Quest"
+config/description="Game about Jack reclaiming the famed Burger in order to gain employment at Gusto's."
 run/main_scene="res://src/main.tscn"
-config/features=PackedStringArray("4.0", "GL Compatibility")
+config/features=PackedStringArray("4.1", "GL Compatibility")
+boot_splash/bg_color=Color(0.0117647, 0.152941, 0.231373, 1)
 config/icon="res://assets/gui/icons/app_icon.png"
 
 [autoload]
@@ -27,8 +29,10 @@ gdscript/warnings/native_method_override=1
 
 window/size/viewport_width=1920
 window/size/viewport_height=1080
+window/size/borderless=true
 window/stretch/mode="canvas_items"
 window/stretch/aspect="expand"
+window/vsync/vsync_mode=0
 
 [filesystem]
 
@@ -71,7 +75,7 @@ ui_down={
 }
 select={
 "deadzone": 0.5,
-"events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":0,"position":Vector2(0, 0),"global_position":Vector2(0, 0),"factor":1.0,"button_index":1,"pressed":false,"double_click":false,"script":null)
+"events": [Object(InputEventMouseButton,"resource_local_to_scene":false,"resource_name":"","device":-1,"window_id":0,"alt_pressed":false,"shift_pressed":false,"ctrl_pressed":false,"meta_pressed":false,"button_mask":0,"position":Vector2(0, 0),"global_position":Vector2(0, 0),"factor":1.0,"button_index":1,"canceled":false,"pressed":false,"double_click":false,"script":null)
 ]
 }
 interact={

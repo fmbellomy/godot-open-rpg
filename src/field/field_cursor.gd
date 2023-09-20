@@ -90,7 +90,6 @@ func _get_cell_under_mouse() -> Vector2i:
 	
 	return cell_under_mouse
 
-
 # A wrapper for cell validity criteria.
 func _is_cell_invalid(cell: Vector2i) -> bool:
 	return not valid_cells.is_empty() and not cell in valid_cells
