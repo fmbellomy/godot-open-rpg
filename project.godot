@@ -20,6 +20,7 @@ config/icon="res://assets/gui/icons/app_icon.png"
 [autoload]
 
 FieldEvents="*res://src/common/globals/global_field_events.gd"
+SceneHandler="*res://src/common/globals/scene_handler.gd"
 
 [debug]
 

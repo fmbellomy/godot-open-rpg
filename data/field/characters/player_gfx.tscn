@@ -7,7 +7,7 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_xkmti"]
 size = Vector2(16, 16)
 
-[node name="GoBotGFX" instance=ExtResource("1_ggnk7")]
+[node name="PlayerGFX" instance=ExtResource("1_ggnk7")]
 
 [node name="AnimationPlayer" parent="." index="0"]
 libraries = {

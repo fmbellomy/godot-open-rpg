@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://h8uhfkecb34x"]
+
+[ext_resource type="Script" path="res://playertrigger.gd" id="1_v0hba"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_y8u0v"]
+
+[node name="LevelChangeTrigger" type="Area2D"]
+collision_layer = 2
+collision_mask = 7
+script = ExtResource("1_v0hba")
+player_pos_after_trigger = null
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_y8u0v")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]
