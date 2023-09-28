@@ -14,7 +14,7 @@ func _process(delta: float) -> void:
 func _get_configuration_warnings() -> PackedStringArray:
 	var warnings = []
 	if not dest or dest.is_empty():
-		warnings.append("LevelChange must point to a level!")
+		warnings.append("LevelChange must point to a scene!")
 	return warnings
 	
 func _on_area_entered(area: Area2D) -> void:
